@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<h1>Compose</h1>
+
+<div class="container"  >
+    <form action="/compose" method="post">
+        
+        <strong>Title</strong><br>
+        <textarea name="postHeading" class="composeInput" autofocus="true" id="composeHeading" rows="1"></textarea>
+        <br><br>
+        <strong>Body</strong><br>
+        <textarea type="text" name="postBody" rows="8" class="composeInput" id="composeBody"> </textarea>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Compose</button>
+    </form>
+</div>
+
+<br><br>
+<%- include("partials/footer") %>

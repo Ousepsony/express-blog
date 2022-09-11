@@ -1,0 +1,13 @@
+<%- include("partials/header")%>
+
+<br>
+
+<% for(i in EJSposts){ %>
+    <div class="container bg-info">   
+        <a href="posts/<%=EJSposts[i].url%>"> <h1> <%= EJSposts[i].heading %> </h1> </a>
+        <p> <%= EJSposts[i].body.slice(0,100) %>...</p> <a href="posts/<%=EJSposts[i].url%>">Read more</a>
+    </div>
+    <br>
+<% } %> 
+
+<%- include("partials/footer")%>
